@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table</title>
+
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid red;
+      /* border-collapse: collapse; */
+      border-radius: 8px;
+    }
+
+    th,
+    td {
+      padding: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- simple table -->
+  <table>
+    <caption>Simple Table</caption>
+    <tr>
+      <th>No</th>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Andry Pebrianto</td>
+      <td>andrypeb227@gmail.com</td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <!-- table with colspan -->
+  <table>
+    <caption>Table With Colspan</caption>
+    <tr>
+      <th>No</th>
+      <th colspan="2">Name</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Andry</td>
+      <td>Pebrianto</td>
+      <td>andrypeb227@gmail.com</td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <!-- table with rowspan -->
+  <table>
+    <caption>Table With Rowspan</caption>
+    <tr>
+      <th rowspan="2">All No</th>
+      <th colspan="2">Name</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <td>Andry</td>
+      <td>Pebrianto</td>
+      <td>andrypeb227@gmail.com</td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <!-- table with border spacing -->
+  <table style="border-spacing: 30px 10px;">
+    <caption>Table With Border Spacing</caption>
+    <tr>
+      <th>No</th>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Andry Pebrianto</td>
+      <td>andrypeb227@gmail.com</td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <!-- tag colgroup (hanya untuk styling saja) -->
+  <table>
+    <caption>Colgroup Example</caption>
+    <colgroup>
+      <col span="2" style="background-color: skyblue;">
+    </colgroup>
+    <tr>
+      <th>No</th>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Andry Pebrianto</td>
+      <td>andrypeb227@gmail.com</td>
+    </tr>
+  </table>
+</body>
+
+</html>
+
+<!-- Important Notes: -->
+<!-- The <caption> tag should be inserted immediately after the <table> tag. -->
+
+
+
+<!-- Tag yang dipelajari: table, tr, th, td, caption, colgroup, col -->
